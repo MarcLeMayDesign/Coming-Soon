@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Marc LeMay — Instructional Design</title>
+<meta name="description" content="Marc LeMay — instructional design and learning experience design. Portfolio coming soon.">
+<meta property="og:title" content="Marc LeMay — Instructional Design">
+<meta property="og:description" content="Attention is the first learning objective. Portfolio coming soon.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://marclemaydesign.com/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;600;800&family=Karla:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  html,body{margin:0;background:#190f1d;font-family:'Public Sans',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+  a{color:#ffffff;text-decoration:none}
+  a:hover{color:#cbe45a}
+  .wrap{min-height:100vh;box-sizing:border-box;background:#190f1d;color:#ffffff;padding:clamp(28px,5vw,72px);display:flex;flex-direction:column;justify-content:space-between;gap:48px;position:relative}
+  .shapes{position:absolute;inset:0;overflow:hidden;z-index:0;pointer-events:none}
+  .dot{position:absolute;right:-120px;top:-110px;width:340px;height:340px;border-radius:50%;border:2px solid #35243a;animation:drift 14s ease-in-out infinite}
+    header,main,footer{position:relative;z-index:2}
+  header{display:flex;justify-content:space-between;align-items:baseline;gap:24px;animation:rise .7s ease both}
+  .mono{font-family:'Karla',system-ui,sans-serif;font-weight:600;font-size:14px;letter-spacing:.12em;text-transform:uppercase}
+  main{max-width:1040px}
+  .ey{font-family:'Karla',system-ui,sans-serif;font-weight:600;font-size:clamp(12px,1.3vw,15px);letter-spacing:.14em;text-transform:uppercase;color:#b79cbd;margin:0 0 clamp(16px,2.4vw,26px);animation:rise .7s .1s ease both}
+  h1{font-size:clamp(40px,8.4vw,132px);line-height:.92;letter-spacing:-.035em;font-weight:800;margin:0;max-width:17ch;text-wrap:balance;animation:rise .8s .18s ease both}
+  h1 span{color:#cbe45a}
+  .rule{height:5px;background:#c4705a;max-width:420px;margin:clamp(24px,3.4vw,40px) 0;transform-origin:left;animation:grow .9s .5s cubic-bezier(.2,.8,.2,1) both}
+  .lede{font-size:clamp(16px,1.45vw,21px);line-height:1.55;max-width:56ch;color:#d6cbd9;margin:0;text-wrap:pretty;animation:rise .8s .34s ease both}
+  footer{display:flex;flex-wrap:wrap;gap:clamp(16px,3vw,44px);align-items:center;justify-content:space-between;border-top:1px solid #35243a;padding-top:22px;animation:rise .8s .5s ease both}
+  .links{display:flex;flex-wrap:wrap;gap:clamp(14px,2.6vw,34px);align-items:center}
+  .email{font-size:clamp(15px,1.3vw,18px);font-weight:600;border-bottom:2px solid #cbe45a;padding-bottom:2px}
+  .li{font-family:'Karla',system-ui,sans-serif;font-weight:600;font-size:14px;letter-spacing:.12em;text-transform:uppercase;color:#b79cbd}
+  .dom{font-family:'Karla',system-ui,sans-serif;font-weight:600;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#8a7290}
+  @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+  @keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+  @keyframes drift{0%{transform:translate(0,0) rotate(0deg)}50%{transform:translate(0,-22px) rotate(8deg)}100%{transform:translate(0,0) rotate(0deg)}}
+  @media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="shapes"><div class="dot"></div></div>
+  <header>
+    <span class="mono">Marc LeMay</span>
+    <span class="mono" style="color:#cbe45a">Site in build</span>
+  </header>
+  <main>
+    <p class="ey">Instructional design &amp; learning experience</p>
+    <h1>Attention is the first learning <span>objective.</span></h1>
+    <div class="rule"></div>
+    <p class="lede">Twenty years teaching higher ed music theory — a subject most students arrive resistant to — rebuilt with innovative, engaging, learner-focused andragogy. I design learning for adults who didn't ask for training. Full portfolio and flagship case study land here shortly.</p>
+  </main>
+  <footer>
+    <div class="links">
+      <a class="email" href="mailto:marclemaydesign@gmail.com">marclemaydesign@gmail.com</a>
+      <a class="li" href="https://www.linkedin.com/in/marc-lemay-3012383b9" target="_blank" rel="noopener">LinkedIn ↗</a>
+    </div>
+    <span class="dom">marclemaydesign.com</span>
+  </footer>
+</div>
+</body>
+</html>
